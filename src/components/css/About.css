@@ -1,0 +1,79 @@
+.about {
+    height: calc(100vh - 60px);
+    display: flex;
+    background-color: #F0EEF2;
+    flex: .85;
+    flex-direction: column;
+    overflow: overlay;
+    padding: 0 20px 60px 20px;
+}
+
+.about__name {
+    max-width: 70%;
+}
+
+.about__courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    position: relative;
+}
+
+.about__courses h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about__card img {
+    width: 100%;
+}
+
+.about__card {
+    min-width: 15%;
+    max-width: 21%;
+    padding: 5px;
+    margin: 10px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+    text-decoration: none;
+    color: black;
+    transition: all ease-in-out .2s;
+}
+
+.about__card:hover {
+    transform: translateY(-5px);
+}
+
+@media only screen and (max-width: 1200px) {
+    .about__card {
+        min-width: 28%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .about__card {
+        min-width: 40%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .about__name {
+        width: 100%;
+    }
+    .about__card {
+        min-width: 80%;
+        margin: 20px auto;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .about {
+        flex: 1;
+    }
+}
